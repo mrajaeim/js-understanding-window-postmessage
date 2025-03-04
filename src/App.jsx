@@ -123,8 +123,8 @@ const App = () => {
                 }`}
               >
                 <div className="text-xs opacity-75">{msg.timestamp}</div>
-                <div className="font-medium">{msg.type.toUpperCase()}</div>
-                <div className="text-sm">
+                <div className="font-medium text-sm">{msg.type.toUpperCase()}</div>
+                <div className="text-xs">
                   {JSON.stringify(msg.data, null, 2)}
                 </div>
               </div>
