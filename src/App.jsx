@@ -34,6 +34,11 @@ const App = () => {
   const handleCountryClick = (country) => {
     if (iframeRef) {
       const message = { country };
+    /**
+     * WARNING:
+     * Using '*' as targetOrigin is not recommended.
+     * Use your application's domain instead.
+     */
       iframeRef.contentWindow.postMessage(message, '*');
 
       // Log outgoing message
